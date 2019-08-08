@@ -15,7 +15,7 @@ export default class VolunteerPath extends Component {
   }
 
   async fetchData() {
-    const response = await axios(`http://team-green.local/api/v1/path`, {
+    const response = await axios(`http://dev-teensmart-team-green.pantheonsite.io/api/v1/path`, {
       method: "GET",
       header: {
         "Content-Type": "aplication/json"

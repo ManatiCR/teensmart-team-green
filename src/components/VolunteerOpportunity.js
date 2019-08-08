@@ -24,7 +24,7 @@ export default class VolunteerOpportunity extends Component {
   }
 
   async fetchData() {
-    const response = await axios(`http://team-green.local/api/v1/opportunity`, {
+    const response = await axios(`http://dev-teensmart-team-green.pantheonsite.io/api/v1/opportunity`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"

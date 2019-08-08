@@ -14,7 +14,7 @@ export default class VolunteerBanner extends Component {
   }
 
   async fetchData() {
-    const response = await axios(`http://team-green.local/api/v1/banner`, {
+    const response = await axios(`http://dev-teensmart-team-green.pantheonsite.io/api/v1/banner`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json"
@@ -38,7 +38,7 @@ export default class VolunteerBanner extends Component {
               <div
                 className="banner__picture--bg"
                 style={{
-                  backgroundImage: `url(http://team-green.local${data.image})`
+                  backgroundImage: `url(http://dev-teensmart-team-green.pantheonsite.io${data.image})`
                 }}
               />
             </div>

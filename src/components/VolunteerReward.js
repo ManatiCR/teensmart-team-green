@@ -15,7 +15,7 @@ export default class VolunteerReward extends Component {
     }
 
     async fetchData() {
-      const response = await axios('http://team-green.local/api/v1/reward', {
+      const response = await axios('http://dev-teensmart-team-green.pantheonsite.io/api/v1/reward', {
           method: "GET",
           headers: {
               "Content-Type": "application/json"
@@ -43,7 +43,7 @@ export default class VolunteerReward extends Component {
               <div className="reward__grid">
                   {data ? data.map((item, index) =>
                     <div className="reward__picture">
-                      <div className="reward__background" style={{backgroundImage:`url(${`http://team-green.local${item.image}`})`}}></div>
+                      <div className="reward__background" style={{backgroundImage:`url(${`http://dev-teensmart-team-green.pantheonsite.io${item.image}`})`}}></div>
                       <div className="reward__description">
                         <p>{item.title}</p>
                       </div>
